@@ -12,4 +12,11 @@
 
 .ul li {
   list-style: none;
+  font-weight: 500;
+}
+
+.logo {
+  background: linear-gradient(to bottom, #51aa85, #969696);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

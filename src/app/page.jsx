@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import Link from "next/link";
 import hero from "../../public/hero.svg";
 export default function Home() {
   return (
@@ -14,7 +14,9 @@ export default function Home() {
             ofyour home
           </p>
           <div>
-            <button className={styles.btn_our_products}>Our Products</button>
+            <Link href="/products">
+              <button className={styles.btn_our_products}>Our Products</button>
+            </Link>
           </div>
         </div>
         <div className={styles.hero_img_container}>
