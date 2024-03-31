@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <nav className={Style.nav}>
-        <h1 className={Style.logo}>ALLOAGENCY</h1>
+        <h1 className={Style.logo}>HEXAAGANCY</h1>
         <ul className={Style.ul}>
           <li>
             <Link href="/products">Products</Link>
