@@ -1,0 +1,19 @@
+.switcher_container {
+  display: flex;
+  border: 1px solid #51aa85;
+  padding: 0.4rem;
+  border-radius: 5rem;
+  gap: 0.2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.theme_circle {
+  background-color: #51aa85;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+}

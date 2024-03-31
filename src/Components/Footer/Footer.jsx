@@ -1,9 +1,12 @@
 import Style from "./Footer.module.css";
-
+import Image from "next/image";
+import x from "../../../public/icons/x.png";
 function Footer() {
   return (
     <>
-      <div>Footer</div>
+      <footer className={Style.footer}>
+        <div>©2024 HEXAAGANCY All Rights reserved </div>
+      </footer>
     </>
   );
 }

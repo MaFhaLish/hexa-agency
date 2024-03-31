@@ -1,17 +1,18 @@
 import Link from "next/link";
 import Style from "./Navbar.module.css";
+import ThemeSwitcher from "@/Components/ThemeSwitcher/ThemeSwitcher";
 
 function Navbar() {
   return (
     <>
-      <nav>
-        <h1 className={Style.logo}>Agency</h1>
-        <ul>
+      <nav className={Style.nav}>
+        <h1 className={Style.logo}>ALLOAGENCY</h1>
+        <ul className={Style.ul}>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/products">Products</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <ThemeSwitcher />
           </li>
         </ul>
       </nav>
