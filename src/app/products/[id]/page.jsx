@@ -1,6 +1,7 @@
 import styles from "./product.module.css";
 import Image from "next/image";
 import Link from "next/link";
+
 async function getData(id) {
   const res = await fetch(`https://dummyjson.com/products/${id}`);
 
@@ -8,6 +9,15 @@ async function getData(id) {
     throw new Error("Failed to fetch data");
   }
   return res.json();
+}
+
+// GeneratedMetadata
+export async function generateMetadata({ params }) {
+  const product = await getData(params.id);
+  return {
+    title: product.title,
+    description: product.description,
+  };
 }
 
 async function product({ params }) {

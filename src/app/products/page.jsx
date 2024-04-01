@@ -2,6 +2,11 @@ import styles from "./products.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "HexaAgancy - Products",
+  description: "HexaAgancy Products Page",
+};
+
 async function getData() {
   const res = await fetch("https://dummyjson.com/products");
 
